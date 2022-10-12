@@ -1,0 +1,1166 @@
+$date
+	Tue Oct 11 00:45:44 2022
+$end
+$version
+	QuestaSim Version 6.5f
+$end
+$timescale
+	1fs
+$end
+$scope module alu_tb $end
+$var wire 1 ! C [15] $end
+$var wire 1 " C [14] $end
+$var wire 1 # C [13] $end
+$var wire 1 $ C [12] $end
+$var wire 1 % C [11] $end
+$var wire 1 & C [10] $end
+$var wire 1 ' C [9] $end
+$var wire 1 ( C [8] $end
+$var wire 1 ) C [7] $end
+$var wire 1 * C [6] $end
+$var wire 1 + C [5] $end
+$var wire 1 , C [4] $end
+$var wire 1 - C [3] $end
+$var wire 1 . C [2] $end
+$var wire 1 / C [1] $end
+$var wire 1 0 C [0] $end
+$var wire 1 1 overflow $end
+$var reg 16 2 A [15:0] $end
+$var reg 16 3 B [15:0] $end
+$var reg 5 4 alu_code [4:0] $end
+$var reg 1 5 enable $end
+$scope module alu $end
+$var reg 16 6 actualC [15:0] $end
+$var reg 1 7 actualOverflow $end
+$var wire 1 8 a [15] $end
+$var wire 1 9 a [14] $end
+$var wire 1 : a [13] $end
+$var wire 1 ; a [12] $end
+$var wire 1 < a [11] $end
+$var wire 1 = a [10] $end
+$var wire 1 > a [9] $end
+$var wire 1 ? a [8] $end
+$var wire 1 @ a [7] $end
+$var wire 1 A a [6] $end
+$var wire 1 B a [5] $end
+$var wire 1 C a [4] $end
+$var wire 1 D a [3] $end
+$var wire 1 E a [2] $end
+$var wire 1 F a [1] $end
+$var wire 1 G a [0] $end
+$var wire 1 H b [15] $end
+$var wire 1 I b [14] $end
+$var wire 1 J b [13] $end
+$var wire 1 K b [12] $end
+$var wire 1 L b [11] $end
+$var wire 1 M b [10] $end
+$var wire 1 N b [9] $end
+$var wire 1 O b [8] $end
+$var wire 1 P b [7] $end
+$var wire 1 Q b [6] $end
+$var wire 1 R b [5] $end
+$var wire 1 S b [4] $end
+$var wire 1 T b [3] $end
+$var wire 1 U b [2] $end
+$var wire 1 V b [1] $end
+$var wire 1 W b [0] $end
+$var wire 1 X alu_code [4] $end
+$var wire 1 Y alu_code [3] $end
+$var wire 1 Z alu_code [2] $end
+$var wire 1 [ alu_code [1] $end
+$var wire 1 \ alu_code [0] $end
+$var wire 1 ] enable $end
+$var wire 1 ^ arithmeticC [15] $end
+$var wire 1 _ arithmeticC [14] $end
+$var wire 1 ` arithmeticC [13] $end
+$var wire 1 a arithmeticC [12] $end
+$var wire 1 b arithmeticC [11] $end
+$var wire 1 c arithmeticC [10] $end
+$var wire 1 d arithmeticC [9] $end
+$var wire 1 e arithmeticC [8] $end
+$var wire 1 f arithmeticC [7] $end
+$var wire 1 g arithmeticC [6] $end
+$var wire 1 h arithmeticC [5] $end
+$var wire 1 i arithmeticC [4] $end
+$var wire 1 j arithmeticC [3] $end
+$var wire 1 k arithmeticC [2] $end
+$var wire 1 l arithmeticC [1] $end
+$var wire 1 m arithmeticC [0] $end
+$var wire 1 n logicC [15] $end
+$var wire 1 o logicC [14] $end
+$var wire 1 p logicC [13] $end
+$var wire 1 q logicC [12] $end
+$var wire 1 r logicC [11] $end
+$var wire 1 s logicC [10] $end
+$var wire 1 t logicC [9] $end
+$var wire 1 u logicC [8] $end
+$var wire 1 v logicC [7] $end
+$var wire 1 w logicC [6] $end
+$var wire 1 x logicC [5] $end
+$var wire 1 y logicC [4] $end
+$var wire 1 z logicC [3] $end
+$var wire 1 { logicC [2] $end
+$var wire 1 | logicC [1] $end
+$var wire 1 } logicC [0] $end
+$var wire 1 ~ shiftC [15] $end
+$var wire 1 !! shiftC [14] $end
+$var wire 1 "! shiftC [13] $end
+$var wire 1 #! shiftC [12] $end
+$var wire 1 $! shiftC [11] $end
+$var wire 1 %! shiftC [10] $end
+$var wire 1 &! shiftC [9] $end
+$var wire 1 '! shiftC [8] $end
+$var wire 1 (! shiftC [7] $end
+$var wire 1 )! shiftC [6] $end
+$var wire 1 *! shiftC [5] $end
+$var wire 1 +! shiftC [4] $end
+$var wire 1 ,! shiftC [3] $end
+$var wire 1 -! shiftC [2] $end
+$var wire 1 .! shiftC [1] $end
+$var wire 1 /! shiftC [0] $end
+$var wire 1 0! setC [15] $end
+$var wire 1 1! setC [14] $end
+$var wire 1 2! setC [13] $end
+$var wire 1 3! setC [12] $end
+$var wire 1 4! setC [11] $end
+$var wire 1 5! setC [10] $end
+$var wire 1 6! setC [9] $end
+$var wire 1 7! setC [8] $end
+$var wire 1 8! setC [7] $end
+$var wire 1 9! setC [6] $end
+$var wire 1 :! setC [5] $end
+$var wire 1 ;! setC [4] $end
+$var wire 1 <! setC [3] $end
+$var wire 1 =! setC [2] $end
+$var wire 1 >! setC [1] $end
+$var wire 1 ?! setC [0] $end
+$var wire 1 @! arithmeticOverflow $end
+$var wire 1 A! logicOverflow $end
+$var wire 1 B! shiftOverflow $end
+$var wire 1 C! setOverflow $end
+$scope module arithmetic $end
+$var reg 16 D! actualC [15:0] $end
+$var reg 1 E! overflow $end
+$var wire 1 8 a [15] $end
+$var wire 1 9 a [14] $end
+$var wire 1 : a [13] $end
+$var wire 1 ; a [12] $end
+$var wire 1 < a [11] $end
+$var wire 1 = a [10] $end
+$var wire 1 > a [9] $end
+$var wire 1 ? a [8] $end
+$var wire 1 @ a [7] $end
+$var wire 1 A a [6] $end
+$var wire 1 B a [5] $end
+$var wire 1 C a [4] $end
+$var wire 1 D a [3] $end
+$var wire 1 E a [2] $end
+$var wire 1 F a [1] $end
+$var wire 1 G a [0] $end
+$var wire 1 H b [15] $end
+$var wire 1 I b [14] $end
+$var wire 1 J b [13] $end
+$var wire 1 K b [12] $end
+$var wire 1 L b [11] $end
+$var wire 1 M b [10] $end
+$var wire 1 N b [9] $end
+$var wire 1 O b [8] $end
+$var wire 1 P b [7] $end
+$var wire 1 Q b [6] $end
+$var wire 1 R b [5] $end
+$var wire 1 S b [4] $end
+$var wire 1 T b [3] $end
+$var wire 1 U b [2] $end
+$var wire 1 V b [1] $end
+$var wire 1 W b [0] $end
+$var wire 1 X alu_code [4] $end
+$var wire 1 Y alu_code [3] $end
+$var wire 1 Z alu_code [2] $end
+$var wire 1 [ alu_code [1] $end
+$var wire 1 \ alu_code [0] $end
+$var wire 1 ] enable $end
+$var reg 17 F! signedC [16:0] $end
+$var reg 17 G! unsignedC [16:0] $end
+$var wire 1 H! signedA [15] $end
+$var wire 1 I! signedA [14] $end
+$var wire 1 J! signedA [13] $end
+$var wire 1 K! signedA [12] $end
+$var wire 1 L! signedA [11] $end
+$var wire 1 M! signedA [10] $end
+$var wire 1 N! signedA [9] $end
+$var wire 1 O! signedA [8] $end
+$var wire 1 P! signedA [7] $end
+$var wire 1 Q! signedA [6] $end
+$var wire 1 R! signedA [5] $end
+$var wire 1 S! signedA [4] $end
+$var wire 1 T! signedA [3] $end
+$var wire 1 U! signedA [2] $end
+$var wire 1 V! signedA [1] $end
+$var wire 1 W! signedA [0] $end
+$var wire 1 X! signedB [15] $end
+$var wire 1 Y! signedB [14] $end
+$var wire 1 Z! signedB [13] $end
+$var wire 1 [! signedB [12] $end
+$var wire 1 \! signedB [11] $end
+$var wire 1 ]! signedB [10] $end
+$var wire 1 ^! signedB [9] $end
+$var wire 1 _! signedB [8] $end
+$var wire 1 `! signedB [7] $end
+$var wire 1 a! signedB [6] $end
+$var wire 1 b! signedB [5] $end
+$var wire 1 c! signedB [4] $end
+$var wire 1 d! signedB [3] $end
+$var wire 1 e! signedB [2] $end
+$var wire 1 f! signedB [1] $end
+$var wire 1 g! signedB [0] $end
+$upscope $end
+$scope module logic $end
+$var reg 16 h! c [15:0] $end
+$var reg 1 i! overflow $end
+$var wire 1 8 a [15] $end
+$var wire 1 9 a [14] $end
+$var wire 1 : a [13] $end
+$var wire 1 ; a [12] $end
+$var wire 1 < a [11] $end
+$var wire 1 = a [10] $end
+$var wire 1 > a [9] $end
+$var wire 1 ? a [8] $end
+$var wire 1 @ a [7] $end
+$var wire 1 A a [6] $end
+$var wire 1 B a [5] $end
+$var wire 1 C a [4] $end
+$var wire 1 D a [3] $end
+$var wire 1 E a [2] $end
+$var wire 1 F a [1] $end
+$var wire 1 G a [0] $end
+$var wire 1 H b [15] $end
+$var wire 1 I b [14] $end
+$var wire 1 J b [13] $end
+$var wire 1 K b [12] $end
+$var wire 1 L b [11] $end
+$var wire 1 M b [10] $end
+$var wire 1 N b [9] $end
+$var wire 1 O b [8] $end
+$var wire 1 P b [7] $end
+$var wire 1 Q b [6] $end
+$var wire 1 R b [5] $end
+$var wire 1 S b [4] $end
+$var wire 1 T b [3] $end
+$var wire 1 U b [2] $end
+$var wire 1 V b [1] $end
+$var wire 1 W b [0] $end
+$var wire 1 X alu_code [4] $end
+$var wire 1 Y alu_code [3] $end
+$var wire 1 Z alu_code [2] $end
+$var wire 1 [ alu_code [1] $end
+$var wire 1 \ alu_code [0] $end
+$var wire 1 ] enable $end
+$upscope $end
+$scope module shift $end
+$var reg 16 j! c [15:0] $end
+$var reg 1 k! overflow $end
+$var wire 1 8 a [15] $end
+$var wire 1 9 a [14] $end
+$var wire 1 : a [13] $end
+$var wire 1 ; a [12] $end
+$var wire 1 < a [11] $end
+$var wire 1 = a [10] $end
+$var wire 1 > a [9] $end
+$var wire 1 ? a [8] $end
+$var wire 1 @ a [7] $end
+$var wire 1 A a [6] $end
+$var wire 1 B a [5] $end
+$var wire 1 C a [4] $end
+$var wire 1 D a [3] $end
+$var wire 1 E a [2] $end
+$var wire 1 F a [1] $end
+$var wire 1 G a [0] $end
+$var wire 1 H b [15] $end
+$var wire 1 I b [14] $end
+$var wire 1 J b [13] $end
+$var wire 1 K b [12] $end
+$var wire 1 L b [11] $end
+$var wire 1 M b [10] $end
+$var wire 1 N b [9] $end
+$var wire 1 O b [8] $end
+$var wire 1 P b [7] $end
+$var wire 1 Q b [6] $end
+$var wire 1 R b [5] $end
+$var wire 1 S b [4] $end
+$var wire 1 T b [3] $end
+$var wire 1 U b [2] $end
+$var wire 1 V b [1] $end
+$var wire 1 W b [0] $end
+$var wire 1 X alu_code [4] $end
+$var wire 1 Y alu_code [3] $end
+$var wire 1 Z alu_code [2] $end
+$var wire 1 [ alu_code [1] $end
+$var wire 1 \ alu_code [0] $end
+$var wire 1 ] enable $end
+$upscope $end
+$scope module set $end
+$var reg 16 l! c [15:0] $end
+$var reg 1 m! overflow $end
+$var wire 1 8 a [15] $end
+$var wire 1 9 a [14] $end
+$var wire 1 : a [13] $end
+$var wire 1 ; a [12] $end
+$var wire 1 < a [11] $end
+$var wire 1 = a [10] $end
+$var wire 1 > a [9] $end
+$var wire 1 ? a [8] $end
+$var wire 1 @ a [7] $end
+$var wire 1 A a [6] $end
+$var wire 1 B a [5] $end
+$var wire 1 C a [4] $end
+$var wire 1 D a [3] $end
+$var wire 1 E a [2] $end
+$var wire 1 F a [1] $end
+$var wire 1 G a [0] $end
+$var wire 1 H b [15] $end
+$var wire 1 I b [14] $end
+$var wire 1 J b [13] $end
+$var wire 1 K b [12] $end
+$var wire 1 L b [11] $end
+$var wire 1 M b [10] $end
+$var wire 1 N b [9] $end
+$var wire 1 O b [8] $end
+$var wire 1 P b [7] $end
+$var wire 1 Q b [6] $end
+$var wire 1 R b [5] $end
+$var wire 1 S b [4] $end
+$var wire 1 T b [3] $end
+$var wire 1 U b [2] $end
+$var wire 1 V b [1] $end
+$var wire 1 W b [0] $end
+$var wire 1 X alu_code [4] $end
+$var wire 1 Y alu_code [3] $end
+$var wire 1 Z alu_code [2] $end
+$var wire 1 [ alu_code [1] $end
+$var wire 1 \ alu_code [0] $end
+$var wire 1 ] enable $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 2
+bx 3
+bx 4
+15
+bx 6
+x7
+bx D!
+0E!
+bx F!
+bx G!
+bx h!
+0i!
+bx j!
+0k!
+b0 l!
+0m!
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+x1
+xm
+xl
+xk
+xj
+xi
+xh
+xg
+xf
+xe
+xd
+xc
+xb
+xa
+x`
+x_
+x^
+x}
+x|
+x{
+xz
+xy
+xx
+xw
+xv
+xu
+xt
+xs
+xr
+xq
+xp
+xo
+xn
+x/!
+x.!
+x-!
+x,!
+x+!
+x*!
+x)!
+x(!
+x'!
+x&!
+x%!
+x$!
+x#!
+x"!
+x!!
+x~
+0?!
+0>!
+0=!
+0<!
+0;!
+0:!
+09!
+08!
+07!
+06!
+05!
+04!
+03!
+02!
+01!
+00!
+0@!
+0A!
+0B!
+0C!
+xW!
+xV!
+xU!
+xT!
+xS!
+xR!
+xQ!
+xP!
+xO!
+xN!
+xM!
+xL!
+xK!
+xJ!
+xI!
+xH!
+xg!
+xf!
+xe!
+xd!
+xc!
+xb!
+xa!
+x`!
+x_!
+x^!
+x]!
+x\!
+x[!
+xZ!
+xY!
+xX!
+1]
+x\
+x[
+xZ
+xY
+xX
+xW
+xV
+xU
+xT
+xS
+xR
+xQ
+xP
+xO
+xN
+xM
+xL
+xK
+xJ
+xI
+xH
+xG
+xF
+xE
+xD
+xC
+xB
+xA
+x@
+x?
+x>
+x=
+x<
+x;
+x:
+x9
+x8
+$end
+#5
+b0 4
+b0 2
+b1 3
+1W
+0V
+0U
+0T
+0S
+0R
+0Q
+0P
+0O
+0N
+0M
+0L
+0K
+0J
+0I
+0H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+0\
+0[
+0Z
+0Y
+0X
+0W!
+0V!
+0U!
+0T!
+0S!
+0R!
+0Q!
+0P!
+0O!
+0N!
+0M!
+0L!
+0K!
+0J!
+0I!
+0H!
+1g!
+0f!
+0e!
+0d!
+0c!
+0b!
+0a!
+0`!
+0_!
+0^!
+0]!
+0\!
+0[!
+0Z!
+0Y!
+0X!
+#10
+b1111 2
+b1111 3
+1V
+1U
+1T
+1G
+1F
+1E
+1D
+1W!
+1V!
+1U!
+1T!
+1f!
+1e!
+1d!
+#15
+b111111100000000 2
+b1100000000 3
+0W
+0V
+0U
+0T
+1O
+1N
+0G
+0F
+0E
+0D
+1?
+1>
+1=
+1<
+1;
+1:
+19
+0W!
+0V!
+0U!
+0T!
+1O!
+1N!
+1M!
+1L!
+1K!
+1J!
+1I!
+0g!
+0f!
+0e!
+0d!
+1_!
+1^!
+#20
+b1111111100000000 2
+b100000000 3
+0N
+18
+1H!
+0^!
+#25
+b1000000100000000 2
+b1000000000000000 3
+0O
+1H
+0>
+0=
+0<
+0;
+0:
+09
+0N!
+0M!
+0L!
+0K!
+0J!
+0I!
+0_!
+1X!
+#30
+b10 4
+b0 2
+b1 3
+1W
+0H
+0?
+08
+1[
+0O!
+0H!
+1g!
+0X!
+#35
+b1111 2
+b1111 3
+1V
+1U
+1T
+1G
+1F
+1E
+1D
+1W!
+1V!
+1U!
+1T!
+1f!
+1e!
+1d!
+#40
+b111111100000000 2
+b1100000000 3
+0W
+0V
+0U
+0T
+1O
+1N
+0G
+0F
+0E
+0D
+1?
+1>
+1=
+1<
+1;
+1:
+19
+0W!
+0V!
+0U!
+0T!
+1O!
+1N!
+1M!
+1L!
+1K!
+1J!
+1I!
+0g!
+0f!
+0e!
+0d!
+1_!
+1^!
+#45
+b1111111100000000 2
+b100000000 3
+0N
+18
+1H!
+0^!
+#50
+b1000000100000000 2
+b1000000000000000 3
+0O
+1H
+0>
+0=
+0<
+0;
+0:
+09
+0N!
+0M!
+0L!
+0K!
+0J!
+0I!
+0_!
+1X!
+#55
+b100 4
+b0 2
+b100000000 3
+1O
+0H
+0?
+08
+0[
+1Z
+0O!
+0H!
+1_!
+0X!
+#60
+b111100000000 2
+b111100000000 3
+1N
+1M
+1L
+1?
+1>
+1=
+1<
+1O!
+1N!
+1M!
+1L!
+1^!
+1]!
+1\!
+#65
+b111111111111111 2
+b1100000000 3
+0M
+0L
+1G
+1F
+1E
+1D
+1C
+1B
+1A
+1@
+1;
+1:
+19
+1W!
+1V!
+1U!
+1T!
+1S!
+1R!
+1Q!
+1P!
+1K!
+1J!
+1I!
+0]!
+0\!
+#70
+b1111111100000000 2
+b100000000 3
+0N
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+18
+0W!
+0V!
+0U!
+0T!
+0S!
+0R!
+0Q!
+0P!
+1H!
+0^!
+#75
+b1000000100000000 2
+b1000000000000000 3
+0O
+1H
+0>
+0=
+0<
+0;
+0:
+09
+0N!
+0M!
+0L!
+0K!
+0J!
+0I!
+0_!
+1X!
+#80
+b1 4
+b0 2
+b1 3
+1W
+0H
+0?
+08
+1\
+0Z
+0O!
+0H!
+1g!
+0X!
+#85
+b1111 2
+b1111 3
+1V
+1U
+1T
+1G
+1F
+1E
+1D
+1W!
+1V!
+1U!
+1T!
+1f!
+1e!
+1d!
+#90
+b111111100000000 2
+b1100000000 3
+0W
+0V
+0U
+0T
+1O
+1N
+0G
+0F
+0E
+0D
+1?
+1>
+1=
+1<
+1;
+1:
+19
+0W!
+0V!
+0U!
+0T!
+1O!
+1N!
+1M!
+1L!
+1K!
+1J!
+1I!
+0g!
+0f!
+0e!
+0d!
+1_!
+1^!
+#95
+b1111111100000000 2
+b100000000 3
+0N
+18
+1H!
+0^!
+#100
+b1000000100000000 2
+b1000000000000000 3
+0O
+1H
+0>
+0=
+0<
+0;
+0:
+09
+0N!
+0M!
+0L!
+0K!
+0J!
+0I!
+0_!
+1X!
+#105
+b11 4
+b0 2
+b1 3
+1W
+0H
+0?
+08
+1[
+0O!
+0H!
+1g!
+0X!
+#110
+b1111111100000000 2
+b1111110011100000 3
+0W
+1R
+1Q
+1P
+1M
+1L
+1K
+1J
+1I
+1H
+1?
+1>
+1=
+1<
+1;
+1:
+19
+18
+1O!
+1N!
+1M!
+1L!
+1K!
+1J!
+1I!
+1H!
+0g!
+1b!
+1a!
+1`!
+1]!
+1\!
+1[!
+1Z!
+1Y!
+1X!
+#115
+b111111100000000 2
+b1100000000 3
+0R
+0Q
+0P
+1O
+1N
+0M
+0L
+0K
+0J
+0I
+0H
+08
+0H!
+0b!
+0a!
+0`!
+1_!
+1^!
+0]!
+0\!
+0[!
+0Z!
+0Y!
+0X!
+#120
+b1111111100000000 2
+b100000000 3
+0N
+18
+1H!
+0^!
+#125
+b1000000100000000 2
+b1000000000000000 3
+0O
+1H
+0>
+0=
+0<
+0;
+0:
+09
+0N!
+0M!
+0L!
+0K!
+0J!
+0I!
+0_!
+1X!
+#130
+b101 4
+b0 2
+b100000000 3
+1O
+0H
+0?
+08
+0[
+1Z
+0O!
+0H!
+1_!
+0X!
+#135
+b1111 2
+b1111 3
+1W
+1V
+1U
+1T
+0O
+1G
+1F
+1E
+1D
+1W!
+1V!
+1U!
+1T!
+1g!
+1f!
+1e!
+1d!
+0_!
+#140
+b111111100000000 2
+b1100000000 3
+0W
+0V
+0U
+0T
+1O
+1N
+0G
+0F
+0E
+0D
+1?
+1>
+1=
+1<
+1;
+1:
+19
+0W!
+0V!
+0U!
+0T!
+1O!
+1N!
+1M!
+1L!
+1K!
+1J!
+1I!
+0g!
+0f!
+0e!
+0d!
+1_!
+1^!
+#145
+b1111111100000000 2
+b100000000 3
+0N
+18
+1H!
+0^!
+#150
+b1000000000000000 2
+b1000000000000000 3
+0O
+1H
+0?
+0>
+0=
+0<
+0;
+0:
+09
+0O!
+0N!
+0M!
+0L!
+0K!
+0J!
+0I!
+0_!
+1X!
